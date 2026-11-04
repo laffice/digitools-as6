@@ -1,0 +1,34 @@
+import React from 'react';
+import { FiShoppingCart } from 'react-icons/fi';
+
+const Navbar = () => {
+    return (
+        <div className='flex justify-around items-center py-10'>
+            <div>
+                <h1 className='inline-block pb-2 text-5xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>DigiTools</h1>
+            </div>
+            <div>
+                <ul className='flex gap-5 text-lg font-semibold'>
+                    <li><a href="Products">Products</a></li>
+                    <li><a href="Features">Features</a></li>
+                    <li><a href="Pricing">Pricing</a></li>
+                    <li><a href="Testimonials">Testimonials</a></li>
+                    <li><a href="FAQ">FAQ</a></li>
+                </ul>
+            </div>
+            <div className='flex items-center gap-5  font-semibold'>
+                <div className='text-2xl relative'>
+                    <FiShoppingCart></FiShoppingCart><span className='absolute -top-2 -right-2 text-xs  rounded-full '>3</span>
+                </div>
+                <div>
+                    <h3 className='btn border-none bg-white'>Login</h3>
+                </div>
+                <div>
+                    <button className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl text-white'>Get Started</button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Navbar;
