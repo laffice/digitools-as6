@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { use } from 'react';
 import Carts from './Carts/Carts';
 
-const CartSection = () => {
+const CartSection = ({cartsData}) => {
+//    console.log(cartsData);
+    
     return (
         <div className='my-30 text-center'>
             
@@ -19,7 +21,7 @@ const CartSection = () => {
           
         </div>
 
-            <Carts></Carts>
+            <Carts cartsData={cartsData} ></Carts>
         </div>
     );
 };

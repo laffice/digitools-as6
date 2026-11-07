@@ -1,3 +1,4 @@
+import { Suspense, use } from "react";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import CartSection from "./Components/CartSection/CartSection";
@@ -8,18 +9,28 @@ import Navbar from "./Components/Navbar/Navbar";
 import Pricing from "./Components/Pricing/Pricing";
 import Rating from "./Components/Rating/Rating";
 
+const fetchData = async()=>{
+  const res = await fetch("/data.json");
+  return res.json();
+}
+// console.log(fetchData)
 
 
 
+
+const promisedData =  fetchData();
 
 function App() {
+const cartsData = use(promisedData);
   return (
     <>
     <Navbar></Navbar>
     <hr className="text-gray-200"/>
     <Banner></Banner>
     <Rating></Rating>
-    <CartSection></CartSection>
+   <Suspense fallback= {<span className="loading loading-spinner loading-xl"></span>}>
+     <CartSection cartsData={cartsData}></CartSection>
+   </Suspense>
    <GetStarted></GetStarted>
    <Pricing></Pricing>
    <Explore></Explore>
