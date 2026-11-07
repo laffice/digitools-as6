@@ -6,4 +6,18 @@ body {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+};
+
+
+.text{
+size: 16px;
+color: #627382;
+
+};
+
+
+.large{
+  size: 50px;
+  font: bold;
+
 }
