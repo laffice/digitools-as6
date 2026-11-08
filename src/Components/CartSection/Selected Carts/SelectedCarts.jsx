@@ -10,7 +10,7 @@ const SelectedCarts = ({selectedCarts, setSelectedCarts}) => {
                     <div className='space-y-9'>
                         {
                             selectedCarts.map((selectedCart=>{
-                                console.log(selectedCart)
+                                // console.log(selectedCart)
                                 return(
                                    <div key={selectedCart.id} className='flex justify-between items-center rounded-3xl shadow-2xl bg-base-200 p-5 border border-gray-200    '>
                                     <div className='flex gap-4 items-center'>

@@ -8,6 +8,7 @@ import GetStarted from "./Components/GetStarted/GetStarted";
 import Navbar from "./Components/Navbar/Navbar";
 import Pricing from "./Components/Pricing/Pricing";
 import Rating from "./Components/Rating/Rating";
+import { ToastContainer } from "react-toastify";
 
 const fetchData = async()=>{
   const res = await fetch("/data.json");
@@ -36,6 +37,18 @@ const cartsData = use(promisedData);
    <Pricing></Pricing>
    <Explore></Explore>
    <Footer></Footer>
+   <ToastContainer    position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        
+        ></ToastContainer>
     </>
   );
 }
