@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiShoppingCart } from 'react-icons/fi';
 
-const Navbar = () => {
+const Navbar = ({selectedCarts}) => {
     return (
         <div className='flex justify-around items-center py-10'>
             <div>
@@ -18,7 +18,7 @@ const Navbar = () => {
             </div>
             <div className='flex items-center gap-5  font-semibold'>
                 <div className='text-2xl relative'>
-                    <FiShoppingCart></FiShoppingCart><span className='absolute -top-2 -right-2 text-xs  rounded-full '>3</span>
+                    <FiShoppingCart></FiShoppingCart> {selectedCarts.length > 0 ? <span className='absolute -top-2 -right-2 text-xs w-4 h-4 bg-red-400 flex items-center justify-center text-white  rounded-full  '> {selectedCarts.length} </span> : null} 
                 </div>
                 <div>
                     <h3 className='btn border-none bg-white'>Login</h3>

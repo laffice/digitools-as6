@@ -2,14 +2,18 @@ import React from 'react';
 
 import { IoIosCheckmark } from 'react-icons/io';
 const Carts = ({cartsData, selectedCarts, setSelectedCarts}) => {
-  const handleSelectedCarts = () =>{
-console.log(setSelectedCarts)
-  };
+ 
     return (
         <div className='w-9/12 mx-auto grid grid-cols-3 gap-10 justify-center items-center pt-28'>
 
                 {
                 cartsData.map((cart =>{
+                    const handleSelectedCarts= ()=>{
+                        // console.log(cart)
+                        setSelectedCarts([...selectedCarts, cart])
+                        console.log(selectedCarts)
+                        
+                    }
                     return(
         <div key={cart.id} className='text-left space-y-5 border border-gray-200 shadow-2xl p-7 rounded-3xl h-full'>
             <div className='flex  justify-between'>

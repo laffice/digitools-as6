@@ -2,10 +2,10 @@ import React from 'react';
 import Carts from '../Carts/Carts';
 
 
-const AvailableCarts = ({cartsData}) => {
+const AvailableCarts = ({cartsData, selectedCarts, setSelectedCarts}) => {
     return (
         <div>
-            <Carts cartsData={cartsData}/>
+            <Carts setSelectedCarts={setSelectedCarts} selectedCarts={selectedCarts} cartsData={cartsData}/>
         </div>
     );
 };
