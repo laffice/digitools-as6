@@ -10,6 +10,7 @@ const SingleCarts = ({cartsData, selectedCarts, setSelectedCarts,  cart}) => {
                         setSelectedCarts([...selectedCarts, cart]);
                         // console.log(selectedCarts)
                         setCartBtn(true);
+                        // console.log("single cart")
                     }
                      
     return (
