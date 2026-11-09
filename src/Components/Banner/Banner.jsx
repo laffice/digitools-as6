@@ -1,12 +1,13 @@
 import React from "react";
 import banner from '../../assets/banner.png'
 import { CiPlay1 } from "react-icons/ci";
+import { FaRegCircle } from "react-icons/fa";
 const Banner = () => {
   return (
-    <div className="flex justify-around my-20">
+    <div className="flex flex-wrap justify-center gap-5  text-center lg:text-left lg:justify-around  my-20">
       <div className="space-y-8">
-        <p className="btn bg-[#E1E7FF] text-[#4468f8] rounded-4xl ">New: AI-Powered Tools Available</p>
-        <h1 className="text-7xl font-bold">
+        <p className="btn bg-[#E1E7FF] text-[#4468f8] rounded-4xl "><FaRegCircle className="bg-[#4468f8] rounded-full" ></FaRegCircle> New: AI-Powered Tools Available</p>
+        <h1 className=" text-6xl lg:text-7xl font-bold">
           Supercharge Your <br /> Digital Workflow
         </h1>
         <p className="text-sm text-gray-500">
@@ -14,7 +15,7 @@ const Banner = () => {
           software—all in one place. Start creating faster today. <br /> Explore
           Products
         </p>
-        <div className="flex gap-5">
+        <div className="flex items-center justify-center gap-5 lg:gap-5">
           <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl text-white">
             Explore More
           </button>
@@ -25,7 +26,7 @@ const Banner = () => {
       </div>
 
       <div>
-        <img src={banner} alt="" />
+        <img  src={banner} alt="" />
       </div>
     </div>
   );

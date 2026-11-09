@@ -11,7 +11,7 @@ const GetStarted = () => {
                     Start using premium digital tools in minutes, not hours.
                 </p>
             </div>
-           <div className='my-20  max-w-8/12 mx-auto grid grid-cols-3 gap-5'>
+           <div className='my-20  max-w-8/12 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
              <div >
                 <div className='border border-gray-200 rounded-2xl px-5 py-20 relative bg-white space-y-9 shadow-2xl'>
                     <p className='absolute top-5 right-5 bg-violet-800 text-white rounded-b-full p-2'>01</p>

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='py-20 text-white bg-[#101727]'>
-            <div className='flex justify-around items-center pb-20' >
+        <div className='py-20 pl-5 text-white bg-[#101727]'>
+            <div className=' text-center grid sm:grid-cols-2 gap-20  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-around items-center pb-20' >
                 <div className='space-y-7'>
                     <h1 className='text-4xl '>
                         DigiTools

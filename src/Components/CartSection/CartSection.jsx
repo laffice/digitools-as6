@@ -8,7 +8,7 @@ const [cartBtn, setCartBtn ] = useState("Products");
 
     
     return (
-        <div className='my-30 '>
+        <div className='my-50 lg:my-30 '>
             
         <div className='space-y-7 text-center'>
             <h2 className='text-6xl font-semibold'>Premium Digital Tools</h2>

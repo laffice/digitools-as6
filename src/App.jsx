@@ -26,7 +26,8 @@ function App() {
 const cartsData = use(promisedData);
   return (
     <>
-    <Navbar selectedCarts={selectedCarts} ></Navbar>
+   <div className="p-1 sm:p-0">
+     <Navbar selectedCarts={selectedCarts} ></Navbar>
     <hr className="text-gray-200"/>
     <Banner></Banner>
     <Rating></Rating>
@@ -49,6 +50,7 @@ const cartsData = use(promisedData);
         theme="dark"
         
         ></ToastContainer>
+   </div>
     </>
   );
 }

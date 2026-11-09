@@ -7,7 +7,7 @@ const Carts = ({cartsData, selectedCarts, setSelectedCarts}) => {
 
 //  console.log(cartBtn)
     return (
-        <div className='w-9/12 mx-auto grid grid-cols-3 gap-10 justify-center items-center pt-28'>
+        <div className='w-9/12 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center items-center pt-28'>
 
                 {
                 cartsData.map((cart, index)=>{
